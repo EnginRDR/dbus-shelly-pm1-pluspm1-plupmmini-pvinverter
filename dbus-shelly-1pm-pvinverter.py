@@ -22,7 +22,7 @@ from vedbus import VeDbusService
 
 
 class DbusShelly1pmService:
-  def __init__(self, servicename, paths, productname='Shelly(Plus) 1PM', connection='Shelly(Plus) 1PM HTTP JSON service'):
+  def __init__(self, servicename, paths, productname=config['DEFAULT']['ProductName'], connection='Shelly PM HTTP JSON service'):
     config = self._getConfig()
     deviceinstance = int(config['DEFAULT']['Deviceinstance'])
     customname = config['DEFAULT']['CustomName']
